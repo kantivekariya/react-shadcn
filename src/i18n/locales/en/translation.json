@@ -1,0 +1,35 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "posts": "Posts",
+    "categories": "Categories",
+    "tags": "Tags",
+    "signOut": "Sign out",
+    "profile": "Profile",
+    "switchTheme": "Switch Theme"
+  },
+  "dashboard": {
+    "stats": {
+      "totalUsers": "Total Users",
+      "totalRevenue": "Total Revenue",
+      "totalOrders": "Total Orders",
+      "conversionRate": "Conversion Rate"
+    },
+    "charts": {
+      "monthlyTraffic": "Monthly Traffic Overview",
+      "salesOverview": "Sales Overview",
+      "deviceDistribution": "Device Distribution",
+      "activeUsers": "Active Users"
+    },
+    "recentUsers": {
+      "title": "Recent Users",
+      "subtitle": "A list of recently joined users",
+      "columns": {
+        "user": "User",
+        "status": "Status",
+        "joinedDate": "Joined Date",
+        "email": "Email"
+      }
+    }
+  }
+} 

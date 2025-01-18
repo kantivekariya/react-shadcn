@@ -1,0 +1,35 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "posts": "Berichten",
+    "categories": "Categorieën",
+    "tags": "Tags",
+    "signOut": "Uitloggen",
+    "profile": "Profiel",
+    "switchTheme": "Thema Wijzigen"
+  },
+  "dashboard": {
+    "stats": {
+      "totalUsers": "Totaal Gebruikers",
+      "totalRevenue": "Totale Omzet",
+      "totalOrders": "Totaal Bestellingen",
+      "conversionRate": "Conversie Ratio"
+    },
+    "charts": {
+      "monthlyTraffic": "Maandelijks Verkeer Overzicht",
+      "salesOverview": "Verkoop Overzicht",
+      "deviceDistribution": "Apparaat Verdeling",
+      "activeUsers": "Actieve Gebruikers"
+    },
+    "recentUsers": {
+      "title": "Recente Gebruikers",
+      "subtitle": "Een lijst van recent toegevoegde gebruikers",
+      "columns": {
+        "user": "Gebruiker",
+        "status": "Status",
+        "joinedDate": "Lid Sinds",
+        "email": "E-mail"
+      }
+    }
+  }
+} 
