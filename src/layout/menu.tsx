@@ -16,7 +16,16 @@ interface MenuProps {
 }
 
 export const Menu = ({ isOpen }: MenuProps) => {
-  const { pathname } = useLocation();
+  const location = useLocation();
+  
+  const isActive = (path: string) => {
+    // For exact matches (like root path '/')
+    if (path === '/') {
+      return location.pathname === path;
+    }
+    // For other paths, check if the current path starts with the menu item path
+    return location.pathname.startsWith(path);
+  };
 
   return (
     <nav className="mt-8 h-full w-full">
@@ -28,7 +37,7 @@ export const Menu = ({ isOpen }: MenuProps) => {
                 <TooltipTrigger asChild>
                   <Button
                     variant={
-                      (active === undefined && pathname.startsWith(href)) ||
+                      (active === undefined && isActive(href)) ||
                       active
                         ? "secondary"
                         : "ghost"

@@ -1,4 +1,4 @@
-import { Bookmark, LayoutGrid, LucideIcon, SquarePen, Tag } from "lucide-react";
+import { FolderOpen, LayoutGrid, LucideIcon, Mail, MessageCircle } from "lucide-react";
 
 type Menu = {
   href: string;
@@ -9,23 +9,23 @@ type Menu = {
 
 export const MenuList: Menu[] = [
   {
-    href: "/dashboard",
+    href: "/",
     label: "Dashboard",
     icon: LayoutGrid,
   },
   {
-    href: "/posts",
-    label: "Posts",
-    icon: SquarePen,
+    href: "/file-manager",
+    label: "File Manager",
+    icon: FolderOpen,
   },
   {
-    href: "/categories",
-    label: "Categories",
-    icon: Bookmark,
+    href: "/chat",
+    label: "Chat",
+    icon: MessageCircle,
   },
   {
-    href: "/tags",
-    label: "Tags",
-    icon: Tag,
+    href: "/mail",
+    label: "Mail",
+    icon: Mail,
   },
 ];

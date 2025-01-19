@@ -6,6 +6,9 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store/ConfigureStore";
 import { useEffect } from "react";
 import NotFoundPage from "@/pages/NotFoundPage/not-found-page";
+import FileManager from "@/pages/file-manager/file-manager";
+import Chat from "@/pages/chat/chat";
+import Mail from "@/pages/mail/mail";
 
 const MainRoutes = () => {
   const { mode } = useSelector((state: RootState) => state.theme);
@@ -21,7 +24,9 @@ const MainRoutes = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/file-manager" element={<FileManager />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/mail" element={<Mail />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

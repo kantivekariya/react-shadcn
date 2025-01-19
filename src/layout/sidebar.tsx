@@ -40,7 +40,7 @@ export const Sidebar = () => {
           variant="link"
           asChild
         >
-          <Link to="/dashboard" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <PanelsTopLeft className="w-6 h-6 mr-1" />
             <h1
               className={cn(
